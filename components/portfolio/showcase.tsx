@@ -37,7 +37,7 @@ export const ShowCase = () => {
     },
   ];
   return (
-    <section id="portfolio" className=" relative w-full px-6 py-2 bg-emerald-100 ">
+    <section id="portfolio" className=" relative w-full px-6 py-2 bg-emerald-100 gap-y-4">
       <div className=" flex flex-col gap-y-3 text-center mb-4">
         <h1 className=" text-lg text-green-800 font-semibold font-mono ">
           WORK DISPLAY
@@ -59,6 +59,12 @@ export const ShowCase = () => {
             </div>
         ))}
       </div>
+    
+    <div className=" w-full p-6 rounded-md bg-emerald-100 text-center
+    text-xl  text-rose-400 font-bold font-mono 
+    hover:underline hover:text-white hover:cursor-pointer ">
+        Explore more of my artwork 👨🏾‍💻👨🏾‍💻🤭
+    </div>
     </section>
   );
 };

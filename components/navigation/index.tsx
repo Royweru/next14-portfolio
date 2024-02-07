@@ -7,7 +7,7 @@ export const NavBar = () => {
     <div className=' w-full bg-slate-100 border-b-[2px] border-neutral-300 flex items-center justify-center py-3 m-2 rounded-xl'>
        <ul className=' flex gap-x-4 '>
        {navigation.map(nav=>(
-         <li key={nav.label} className=' p-2 rounded-md bg-cyan-200 text-medium font-semibold font-sans'>
+         <li key={nav.label} className=' p-2 rounded-md bg-emerald-500 text-black text-medium font-semibold font-sans'>
             {nav.label}
          </li>
        ))}

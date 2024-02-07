@@ -2,7 +2,7 @@ import React from "react";
 
 export const AboutCard = () => {
   return (
-    <div className=" col-span-1 ">
+    <div className=" col-span-1 " id="about">
       <div
         className=" w-full rounded-md bg-gradient-to-b from-sky-100
           via-blue-100 to-cyan-300 p-2 flex flex-col gap-y-2"

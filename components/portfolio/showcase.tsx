@@ -3,8 +3,8 @@
 import Image from "next/image";
 import React from "react";
 
-export const ShowCase = () => {
-  const portfolio = [
+
+export const portfolio = [
     {
       name: "Carpool",
       images: [
@@ -36,6 +36,9 @@ export const ShowCase = () => {
       images: ["/images/portfolio/bnb1.png", "/images/portfolio/bnb2.png"],
     },
   ];
+
+export const ShowCase = () => {
+  
   return (
     <section id="portfolio" className=" relative w-full px-6 py-2 bg-emerald-100 gap-y-4">
       <div className=" flex flex-col gap-y-3 text-center mb-4">

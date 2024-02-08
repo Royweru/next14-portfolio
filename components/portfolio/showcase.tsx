@@ -46,7 +46,7 @@ export const ShowCase = () => {
           WORK DISPLAY
         </h1>
         <p className=" text-sm font-bold font-mono text-neutral-500">
-          THis are some of my various projects, enjoy!
+          This are some of my various projects, enjoy!
         </p>
       </div>
 

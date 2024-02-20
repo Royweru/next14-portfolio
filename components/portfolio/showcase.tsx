@@ -41,7 +41,7 @@ export const portfolio = [
 export const ShowCase = () => {
    const router = useRouter()
   return (
-    <section id="portfolio" className=" relative w-full px-6 py-2 bg-emerald-100 gap-y-4">
+    <section id="portfolio" className=" relative w-full px-6 py-2  gap-y-4 bg-white">
       <div className=" flex flex-col gap-y-3 text-center mb-4">
         <h1 className=" text-lg text-green-800 font-semibold font-mono ">
           WORK DISPLAY

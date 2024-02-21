@@ -64,13 +64,7 @@ export const ShowCase = () => {
         ))}
       </div>
     
-    <div className=" w-full p-6 rounded-md bg-emerald-100 text-center
-    text-xl  text-rose-400 font-bold font-mono 
-    hover:underline hover:text-white hover:cursor-pointer "
-    onClick={()=>router.push("/work-display")}
-    >
-        Explore more of my artwork 👨🏾‍💻👨🏾‍💻🤭
-    </div>
+  
     </section>
   );
 };

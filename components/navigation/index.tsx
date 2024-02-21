@@ -18,7 +18,8 @@ export const NavBar = () => {
 }
 ]
   return (
-    <div className=' w-full bg-slate-100 border-b-[2px] border-neutral-300 flex items-center justify-center py-3 m-2 rounded-xl'>
+    <div className=' w-full bg-slate-100 border-b-[2px] border-neutral-300 
+    flex items-center justify-center py-3  rounded-xl'>
        <ul className=' flex gap-x-4 '>
        {navigation.map(nav=>(
          <li

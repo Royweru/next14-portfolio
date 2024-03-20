@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 
@@ -43,9 +44,12 @@ export const ProfileCard = () => {
           </p>
 
           <div className="pt-12 pb-8">
-            <button className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full">
+            <a href="#contact">
+            <button className="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full" >
               Get In Touch
             </button>
+            </a>
+       
           </div>
 
           <div className="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"></div>

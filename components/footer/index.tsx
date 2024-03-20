@@ -5,7 +5,7 @@ export const Footer = () => {
     
   return (
    <footer className='  w-full py-4 px-4 m-1 rounded-md'>
-     <div className='w-full grid grid-cols-5'>
+     <div className='w-full grid md:grid-cols-4 grid-cols-2 gap-4'>
        <ContactForm />
        <Contact />
      </div>

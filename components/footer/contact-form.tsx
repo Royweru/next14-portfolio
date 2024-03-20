@@ -2,6 +2,7 @@
 import { constants } from 'http2'
 import React, { use, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { Loader2 } from 'lucide-react';
 
 export const ContactForm = () => {
   const[name,setName] = useState("")
@@ -25,8 +26,7 @@ export const ContactForm = () => {
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID as string
       )
-     console.log(emailDetails)
-     setIsSuccess("Your messsage has been successfully submited, thanks for your outreach!")
+     setIsSuccess(`Your messsage has been successfully submitted, thanks for the outreach ${name}, I really appreciate`)
      setName("")
      setEmail("")
      setMessage("")
@@ -69,10 +69,14 @@ export const ContactForm = () => {
    
    <div className='w-full flex items-center justify-center py-4'>
     <button className=' w-3/4 p-2 hover:bg-emerald-300 hover:text-black
-      text-white font-bold text-xl hover:cursor-pointer hover:opacity-85 rounded-lg' 
+      text-white font-bold text-xl hover:cursor-pointer 
+      hover:opacity-85 rounded-lg flex justify-center items-center gap-x-4' 
       onClick={onSubmit}
       disabled={isLoading}
       >
+        {isLoading&&(
+          <Loader2 className=' w-5 h-5 font-bold animate-spin'/>
+        )}
         SUBMIT
     </button>
    </div>

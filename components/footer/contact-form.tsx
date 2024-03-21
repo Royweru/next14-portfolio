@@ -46,7 +46,7 @@ export const ContactForm = () => {
      disabled={isLoading}
      onChange={(e)=>setName(e.target.value)}
      placeholder='your name'
-     className=' w-2/4 mr-2 p-5 focus:ring-1  text-neutral-600 ring-black font-mono font-bold text-lg'
+     className=' w-2/4 mr-2 p-5 focus:ring-1  text-neutral-200 ring-black font-mono font-bold text-lg'
     />
      <input
      type='email'
@@ -54,7 +54,7 @@ export const ContactForm = () => {
      value={email}
      disabled={isLoading}
      onChange={(e)=>setEmail(e.target.value)}
-     className='w-2/4 p-5  focus:ring-1 text-neutral-600 ring-black font-mono font-bold text-lg'
+     className='w-2/4 p-5  focus:ring-1 text-neutral-200 ring-black font-mono font-bold text-lg'
     />
   </div>
    <div className='w-full flex justify-center'>
@@ -63,7 +63,7 @@ export const ContactForm = () => {
     value={message}
     disabled={isLoading}
     onChange={(e)=>setMessage(e.target.value)}
-    className=' w-11/12 p-6 text-neutral-600 ring-black font-mono font-bold text-lg rounded-md border border-zinc-800'
+    className=' w-11/12 p-6  text-neutral-200 ring-black font-mono font-bold text-lg rounded-md border border-zinc-800'
    />
    </div>
    

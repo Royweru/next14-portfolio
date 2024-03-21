@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 import { ThemeProvider } from "@/components/theme-provider"
+import ModalProvider from "@/components/providers/modal-provider";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -26,6 +27,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <ModalProvider />
             <NavBar/>
             {children}
           </ThemeProvider>

@@ -1,14 +1,28 @@
 "use client";
 
+import { useModal } from "@/hooks/use-modal";
 import { Plus, PlusCircle, PlusSquare } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { MouseEventHandler, useState } from "react";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import { ScrollArea } from "../ui/scroll-area";
 
 export const portfolio = [
   {
     id: 1,
     name: "Carpool",
+    description:
+      "An car sale website,tech stack is Next JS, tailwind,prisma ORM",
     images: [
       "/images/portfolio/carpool1.png",
       "/images/portfolio/carpool2.png",
@@ -19,6 +33,8 @@ export const portfolio = [
   {
     id: 2,
     name: "Cake Recipe",
+    description:
+      "a cake recipe website,tech stack is Next JS React Tailwind Typescript",
     images: [
       "/images/portfolio/cakes1.png",
       "/images/portfolio/cakes2.png",
@@ -28,6 +44,8 @@ export const portfolio = [
   {
     id: 3,
     name: "Apartamenti",
+    description:
+      "A real estate application,tech stack is Next JS, Tailwind, Django on te backend",
     images: [
       "/images/portfolio/apart1.png",
       "/images/portfolio/apart2.png",
@@ -38,16 +56,16 @@ export const portfolio = [
   {
     id: 4,
     name: "Airbnb clone",
+    description:
+      "Airbnb clone tech stack includes Next JS Tailwind, Prisma ORM, Typescript",
     images: ["/images/portfolio/bnb1.png", "/images/portfolio/bnb2.png"],
   },
 ];
 
 export const ShowCase = () => {
   const router = useRouter();
+  const { onOpen, onClose } = useModal();
 
-  const onClick: MouseEventHandler<HTMLDivElement> = (e) => {
-    e.stopPropagation();
-  };
   return (
     <section
       id="portfolio"
@@ -74,10 +92,14 @@ export const ShowCase = () => {
               className="  aspect-square bg-cover bg-center"
               alt=""
             />
+
             <div
               className=" opacity-0 group-hover:opacity-100 absolute flex justify-center
               w-full bottom-6 text-black"
-              onClick={onClick}
+              onClick={(e)=>{
+                e.stopPropagation(),
+                onOpen(portfolio)
+              }}
             >
               <PlusCircle className=" w-28 h-28" />
             </div>

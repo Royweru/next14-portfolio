@@ -11,16 +11,24 @@ export const metadata: Metadata = {
   description: "Your go to developer!",
 };
 
+import { ThemeProvider } from "@/components/theme-provider"
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <NavBar />
-        {children}
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <NavBar/>
+            {children}
+          </ThemeProvider>
         </body>
     </html>
   );

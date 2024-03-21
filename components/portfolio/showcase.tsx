@@ -38,7 +38,7 @@ export const portfolio = [
     images: [
       "/images/portfolio/cakes1.png",
       "/images/portfolio/cakes2.png",
-      "/images/portfolio/cakes.3.png",
+      "/images/portfolio/cakes3.png",
     ],
   },
   {

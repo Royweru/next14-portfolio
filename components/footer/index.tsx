@@ -10,8 +10,10 @@ export const Footer = () => {
        <Contact />
      </div>
      <div className=' border-t-2 border-white flex items-center justify-center'>
-          <div className=' text-xs font-semibold font-sans  text-black'>
-            All rights reserved for 2024
+          <div className=' text-xs font-semibold font-sans  text-white'>
+            <small>
+            &copy; Copyright 2024, Roy Waweru portfolio
+            </small>
           </div>
      </div>
    </footer>

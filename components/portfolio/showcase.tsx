@@ -64,7 +64,7 @@ export const portfolio = [
 
 export const ShowCase = () => {
   const router = useRouter();
-  const { onOpen, onClose } = useModal();
+  const { onOpen } = useModal();
 
   return (
     <section
